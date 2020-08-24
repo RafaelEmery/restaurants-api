@@ -1,10 +1,13 @@
 const express = require('express');
 const routes = express.Router();
 
-routes.get('/', (req, res) => {
-    return res.send({
-        'message': 'Hello world'
-    });
-});
+const RestaurantController = require('./controllers/RestaurantController');
+
+routes
+    .get('/restaurants', RestaurantController.index)
+    .get('/restaurant/:id', RestaurantController.show)
+    .post('/restaurants', RestaurantController.store)
+    .put('/restaurant/:id', RestaurantController.update)
+    .delete('/restaurant/:id', RestaurantController.delete);
 
 module.exports = routes;

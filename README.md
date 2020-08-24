@@ -1,7 +1,7 @@
 ## Deadline
 
 - [X] Saturday, August 22th, 18:20
-- [] Saturday, August 29th, 18:20
+- [X] Saturday, August 29th, 18:20
 
 ## Challenge - Developer Backend
 

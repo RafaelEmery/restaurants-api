@@ -56,8 +56,6 @@ module.exports = {
             }
         });
 
-        return res.send({
-            'message': 'Destroyed!',
-        });
+        return res.send({ 'message': 'Destroyed!' });
     },
 }

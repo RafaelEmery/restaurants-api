@@ -13,7 +13,8 @@ class Restaurant extends Model {
 
     static associate(models) {
         this.hasMany(models.Product, {
-            as: 'products'
+            foreignKey: 'restaurant_id',
+            as: 'products',
         });
     }
 }

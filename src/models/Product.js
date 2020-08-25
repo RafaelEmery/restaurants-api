@@ -16,6 +16,11 @@ class Product extends Model {
             foreignKey: 'restaurant_id',
             as: 'restaurant',
         });
+
+        this.hasOne(models.Offer, {
+            foreignKey: 'product_id',
+            as: 'offer',
+        });
     }
 }   
 

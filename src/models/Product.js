@@ -17,9 +17,9 @@ class Product extends Model {
             as: 'restaurant',
         });
 
-        this.hasOne(models.Offer, {
+        this.hasMany(models.Offer, {
             foreignKey: 'product_id',
-            as: 'offer',
+            as: 'offers',
         });
     }
 }   
